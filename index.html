@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <title>Weather app</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sniglet&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://kit.fontawesome.com/2b3eebf045.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>My Weather App</h1>
+      <div class="row">
+        <div class="col-sm-12">
+          <button type="button" class="btn btn-outline-london btn-lg">
+            London
+          </button>
+          <button type="button" class="btn btn-outline-newyork btn-lg">
+            New York
+          </button>
+          <button type="button" class="btn btn-outline-newdelhi btn-lg">
+            New Delhi
+          </button>
+          <button type="button" class="btn btn-outline-tokyo btn-lg">
+            Tokyo
+          </button>
+          <button type="button" class="btn btn-outline-barcelona btn-lg">
+            Barcelona
+          </button>
+        </div>
+      </div>
+      <form class="row" id="text-box">
+        <div class="col-sm-12">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Enter city name"
+            autocomplete="off"
+            autofocus="on"
+            id="search-text-input"
+          />
+        </div>
+      </form>
+      </br>
+      <div class="row" id="search-current-button">
+          <div class="col-sm-12">
+        <button id= "searchButton" type="button" class="btn-lg">Search</button>
+        <button id = "currentLocationButton"type="button" class="btn-lg">Current Location</button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6">
+          <div class="card">
+               <div class="card-block">
+  <div class="card-body">
+      <i class="fa-solid fa-location-dot"></i>
+    <h5 class="card-title" id="city">London</h5>
+    <p class="card-text1">
+25 Feb 2022, </br>Friday </p>
+    </div>
+  </div>
+</div>
+</div>
+        <div class="col-6">
+<div class="card">
+               <div class="card-block">
+  <div class="card-body">
+    <p class="card-title">
+    <p id="temperature" class="card-text">12 </p>
+    <a href= "#" id="celsius-link" target="_blank" class="tempConv">°C | </a>
+     <a href="#" id="fahrenheit-link" target="_blank" class="tempConv">°F</a> </p></div>
+    <br>
+    <p id="wind" >Humidity: </p><p class="humidity">8<p>%</p></p><br>
+<p id="wind" >Wind:</p><p class="windspeed">8<p>km/hr</p></p>
+</h5>
+  </div>
+  </div>
+       </div>
+      </div>
+      </div>
+      <div class="container-fluid">
+        <div class="row">
+              <div class="col" id="icon"><i class="fa-solid fa-cloud" ></i> </div>
+              <div class="col" id="icon"><i class="fa-solid fa-cloud-sun"></i></div>
+              <div class="col" id="icon"><i class="fa-solid fa-snowflake"></i></div>
+              <div class="col" id="icon"><i class="fa-solid fa-sun"></i></div>
+              <div class="col" id="icon"><i class="fa-solid fa-bolt-lightning"></i></i></div>
+            </div>
+          </br>
+        <div class="row">
+              <div class="col"  >Sat </div>
+              <div class="col" >Sun</div>
+              <div class="col" >Mon</div>
+              <div class="col" >Tue</div>
+              <div class="col">Wed</div>
+            </div>
+          </br>
+        <div class="row">
+              <div class="col"  >5°/10° </div>
+              <div class="col" >8°/12°</div>
+              <div class="col" >9°/13°</div>
+              <div class="col" >10°/14°</div>
+              <div class="col">9°/12°</div>
+            </div>
+            </div>
+          </div>
+          <script src="index.js">
+
+          </script>
+  </body>
+</html>
